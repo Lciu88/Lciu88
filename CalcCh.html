@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ANAF</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" language="javascript" charset="utf-8">
+      function calcCh() {
+        var chirie = parseInt(document.getElementById("boxChirie").value);
+        var luni = parseInt(document.getElementById("boxLuni").value);
+        var totalChirie = chirie * luni;
+        document.getElementById('rezultat').innerHTML = "Valoarea chiriei totale este de " + totalChirie + " Lei.";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <p>Valoarea lunara a chiriei</p>
+    <input id="boxChirie">
+    <p>Numarul de luni de valabilitate a contractului</p>
+    <input id="boxLuni">
+    <br>
+    <br>
+    <button onclick="calcCh()">Calcul</button> 
+    <p id="rezultat"> </p>
+      
+  </body>
+</html>
